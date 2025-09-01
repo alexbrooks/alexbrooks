@@ -175,7 +175,7 @@
             padding: 0 20px;
         }
 
-        /*Window styling */
+        /* Mac Window styling */
         .window {
             border-radius: 8px;
             overflow: hidden;
@@ -280,60 +280,55 @@
             );
         }
 
-        /* Headshot styling */
-        .headshot {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin: 0 auto 25px;
-            border: 3px solid;
-            box-shadow: 
-                inset 0 1px 3px rgba(0, 0, 0, 0.1),
-                0 2px 8px rgba(0, 0, 0, 0.15);
-            background: linear-gradient(135deg, #ddd 0%, #f0f0f0 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 14px;
-            color: #666;
+        .content {
+            backdrop-filter: blur(20px);
+            padding: 40px 35px;
+            position: relative;
+            min-height: 400px;
         }
 
-        .light .headshot {
-            border-color: rgba(255, 255, 255, 0.8);
+        .light .content {
+            background: linear-gradient(
+                180deg,
+                rgba(255, 255, 255, 0.9) 0%,
+                rgba(255, 255, 255, 0.7) 50%,
+                rgba(255, 255, 255, 0.5) 100%
+            );
         }
 
-        .dark .headshot {
-            border-color: rgba(255, 255, 255, 0.3);
-            background: linear-gradient(135deg, #444 0%, #555 100%);
-            color: #999;
+        .dark .content {
+            background: linear-gradient(
+                180deg,
+                rgba(255, 255, 255, 0.15) 0%,
+                rgba(255, 255, 255, 0.1) 50%,
+                rgba(255, 255, 255, 0.05) 100%
+            );
         }
 
-        .name {
+        /* Typography for content */
+        .content h1 {
             font-size: 28px;
             font-weight: bold;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
         }
 
-        .dark .name {
+        .dark .content h1 {
             text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
         }
 
-        .bio {
-            font-size: 16px;
-            line-height: 1.6;
-            margin-bottom: 30px;
+        .content h2 {
+            font-size: 22px;
+            font-weight: 600;
+            margin: 25px 0 15px 0;
             opacity: 0.9;
         }
 
-        /* Social Links - Stacked vertically */
-        .social-links {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            align-items: center;
-            max-width: 250px;
-            margin: 0 auto 30px auto;
+        .content p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            opacity: 0.9;
         }
 
         /* Footer styling */
@@ -354,106 +349,14 @@
             border-color: rgba(255, 255, 255, 0.1);
         }
 
-        .social-btn {
-            padding: 10px 24px;
-            border: none;
-            border-radius: 16px;
-            font-size: 14px;
-            font-weight: 500;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
+        /* Aqua button styling - Stacked vertically */
+        .social-links {
+            display: flex;
+            flex-direction: column;
             gap: 10px;
-            transition: all 0.15s ease;
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-            justify-content: flex-start;
-        }
-
-        .light .social-btn {
-            background: linear-gradient(
-                180deg,
-                rgba(255, 255, 255, 0.95) 0%,
-                rgba(245, 245, 245, 0.95) 50%,
-                rgba(230, 230, 230, 0.95) 100%
-            );
-            border: 1px solid rgba(255, 255, 255, 0.6);
-            box-shadow: 
-                inset 0 1px 0 rgba(255, 255, 255, 0.9),
-                0 1px 3px rgba(0, 0, 0, 0.1);
-            color: #333;
-        }
-
-        .dark .social-btn {
-            background: linear-gradient(
-                180deg,
-                rgba(255, 255, 255, 0.2) 0%,
-                rgba(255, 255, 255, 0.15) 50%,
-                rgba(255, 255, 255, 0.1) 100%
-            );
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            box-shadow: 
-                inset 0 1px 0 rgba(255, 255, 255, 0.3),
-                0 1px 3px rgba(0, 0, 0, 0.2);
-            color: #e0e0e0;
-        }
-
-        .social-btn:hover {
-            transform: translateY(-1px);
-        }
-
-        .light .social-btn:hover {
-            background: linear-gradient(
-                180deg,
-                rgba(255, 255, 255, 1) 0%,
-                rgba(250, 250, 250, 1) 50%,
-                rgba(240, 240, 240, 1) 100%
-            );
-            box-shadow: 
-                inset 0 1px 0 rgba(255, 255, 255, 1),
-                0 2px 6px rgba(0, 0, 0, 0.15);
-        }
-
-        .dark .social-btn:hover {
-            background: linear-gradient(
-                180deg,
-                rgba(255, 255, 255, 0.25) 0%,
-                rgba(255, 255, 255, 0.2) 50%,
-                rgba(255, 255, 255, 0.15) 100%
-            );
-            box-shadow: 
-                inset 0 1px 0 rgba(255, 255, 255, 0.4),
-                0 2px 6px rgba(0, 0, 0, 0.3);
-        }
-
-        .social-btn:active {
-            transform: translateY(0);
-        }
-
-        .light .social-btn:active {
-            background: linear-gradient(
-                180deg,
-                rgba(230, 230, 230, 0.95) 0%,
-                rgba(245, 245, 245, 0.95) 50%,
-                rgba(255, 255, 255, 0.95) 100%
-            );
-            box-shadow: 
-                inset 0 1px 2px rgba(0, 0, 0, 0.1),
-                0 1px 2px rgba(0, 0, 0, 0.1);
-        }
-
-        .dark .social-btn:active {
-            background: linear-gradient(
-                180deg,
-                rgba(255, 255, 255, 0.1) 0%,
-                rgba(255, 255, 255, 0.15) 50%,
-                rgba(255, 255, 255, 0.2) 100%
-            );
-            box-shadow: 
-                inset 0 1px 2px rgba(0, 0, 0, 0.2),
-                0 1px 2px rgba(0, 0, 0, 0.2);
+            align-items: center;
+            max-width: 250px;
+            margin: 0 auto 30px auto;
         }
 
         /* Theme toggle in menu bar */
@@ -558,69 +461,28 @@
                     <div class="control-btn minimize-btn"></div>
                     <div class="control-btn maximize-btn"></div>
                 </div>
-                <div class="window-title">Alex's Personal Site</div>
+                <div class="window-title">Life Document</div>
             </div>
             
             <!-- Window Content -->
-            <div class="profile-card">
-                <div class="headshot">
-                        <img src="images/alex-brooks-side.jpg" alt="Alex Brooks" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
-                </div>
-                
-                <h1 class="name">Alex Brooks</h1>
-                
-                <p class="bio">
-                    Hi, I’m Alex 👋🏻 I started out as a competitive sprinter who somehow also ran one of the web’s leading Apple blogs in the last 2000s—landing me in the room for the first iPhone launch. In the 2010s my journey at the University at Greenwich brought me into activism and leadership, and since then I’ve built a career in media and tech partnerships while staying active in my local community, politics, and creative side projects.
-                    <br>
-                    <br>
-                    Connect with me below, explore my work, and if you’re looking for consulting support—get in touch. (Yes I use em dashes, and so should you)
-                </p>
-                
-                <div class="social-links">
+            <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sapien arcu, consectetur efficitur sapien quis, convallis ultrices risus. Vestibulum fermentum ut odio posuere euismod. Nunc nunc dolor, aliquam ut lacinia at, ullamcorper tincidunt nulla. Vivamus pretium quam eget finibus convallis. Mauris mollis, elit id semper tincidunt, leo neque posuere sapien, ac vehicula enim nisi tincidunt mauris. In a justo justo. Morbi ut erat metus. Vestibulum fringilla mi et lacus auctor, sed accumsan ex tincidunt. Sed sed rhoncus lacus, quis fermentum ligula. Aliquam ut iaculis nibh. Integer ac auctor massa. Duis ornare sapien velit, vitae viverra risus fermentum non. Vivamus scelerisque lacus turpis, ut commodo ante sagittis ac. Sed mattis nunc vitae consectetur egestas.
 
-                    <a href="https://linkedin.com/in/alexbrooks" class="social-btn">
-                        <span>💼</span>
-                        LinkedIn
-                    </a>
+Integer vel tempor felis. Sed dapibus volutpat porttitor. Sed in mi non lorem suscipit faucibus non et metus. Quisque risus libero, hendrerit in ultricies ac, fermentum quis enim. Proin congue tempus auctor. Morbi iaculis magna id tellus cursus, nec pharetra ante luctus. Etiam a dictum enim, quis efficitur lorem. Vestibulum euismod ipsum dolor, eget pellentesque magna malesuada non.
 
-                    <a href="https://threads.net/alexbrooks" class="social-btn">
-                        <span>🧵</span>
-                        Threads
-                    </a>
-                    
-                    <a href="https://mastodon.social/@Alexbrooks" class="social-btn">
-                        <span>🐘</span>
-                        Mastodon
-                    </a>
-                    
-                    <a href="https://instagram.com/alexbrooks" class="social-btn">
-                        <span>📸</span>
-                        Instagram
-                    </a>
-                    
-                    <a href="https://www.flickr.com/photos/alexbrooks/" class="social-btn">
-                        <span>🌄</span>
-                        Flickr
-                    </a>
+Quisque rutrum pulvinar sodales. Mauris condimentum rutrum faucibus. Pellentesque eleifend consectetur posuere. Aenean rhoncus laoreet sem, id laoreet sem efficitur ac. Morbi ex dui, venenatis ut fermentum sed, lacinia ac diam. In hac habitasse platea dictumst. Donec condimentum felis sit amet auctor fermentum. Duis lorem neque, lacinia nec tortor in, porttitor maximus turpis. Etiam finibus nec sem eget ultrices. Pellentesque fermentum augue purus, vitae viverra orci rutrum a. Morbi tincidunt, quam ut mollis sodales, risus nunc finibus quam, vel mollis lectus risus non est. Fusce lobortis tortor quis lacus fringilla, ut bibendum lorem scelerisque.
 
-                    <a href="https://zoho-consultant.services" class="social-btn">
-                        <span>🌐</span>
-                        CRM Consultancy
-                    </a>
-                    
-                    <a href="https://worldofapple.com" class="social-btn">
-                        <span>🔗</span>
-                        World of Apple
-                    </a>
-                </div>
-                
-                <!-- Footer Copyright -->
+Integer sed auctor nibh. Donec pharetra ipsum quis dui ullamcorper dictum. Praesent finibus, tellus a malesuada ullamcorper, ligula odio convallis dui, dapibus tempus velit tellus in odio. Praesent consequat sem eget magna condimentum aliquet. Etiam interdum, neque at fermentum ultricies, lacus quam congue augue, ut molestie sem urna ut mauris. Quisque mattis, enim ac pellentesque mattis, est arcu gravida nulla, at semper lacus eros ac dolor. Mauris gravida, sem id suscipit maximus, metus mi dapibus turpis, feugiat ullamcorper ante nisi et libero. Vestibulum at elit felis. Sed lacinia, lacus sit amet tincidunt luctus, augue metus commodo purus, vel efficitur eros odio efficitur mauris. Pellentesque vitae pharetra est, a tempor libero. Proin eros lacus, dapibus sit amet congue quis, hendrerit vitae sapien.
+
+Suspendisse varius, turpis at dictum euismod, felis diam ultricies magna, sed consectetur turpis elit eu dui. Fusce volutpat euismod dolor molestie pretium. Aliquam erat volutpat. Mauris metus est, aliquam sit amet imperdiet non, vehicula eget urna. Donec lobortis maximus nunc et accumsan. Ut ante ipsum, venenatis ac vulputate eget, vehicula ac justo. Maecenas non neque ac est laoreet consectetur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris faucibus leo id nulla aliquam vulputate.
+
+            <!-- Footer Copyright -->
                 <div class="footer">
                     © 2025 Alex Brooks (and maybe Apple).
                 </div>
             </div>
         </div>
-    </div>
+    
 
     <script>
         // Auto dark mode detection
