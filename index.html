@@ -447,8 +447,8 @@
                 0 1px 2px rgba(0, 0, 0, 0.2);
         }
 
-        /* iOS Settings Style Menu */
-        .ios-menu {
+        /* Button Menu styling */
+        .stacked-menu {
             max-width: 100%;
             margin: 0 auto 30px auto;
         }
@@ -468,7 +468,7 @@
             border: 1px solid rgba(255, 255, 255, 0.15);
         }
 
-        .ios-menu .menu-item {
+        .stacked-menu .menu-item {
             display: flex;
             align-items: center;
             padding: 12px 16px;
@@ -479,27 +479,35 @@
             position: relative;
         }
 
-        .dark .ios-menu .menu-item {
+        .dark .stacked-menu .menu-item {
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        .ios-menu .menu-item:last-child {
+        .stacked-menu .menu-item:last-child {
             border-bottom: none;
         }
 
-        .ios-menu .menu-item:hover {
+        .stacked-menu .menu-item:hover {
             background-color: rgba(0, 122, 255, 0.1);
         }
 
-        .dark .ios-menu .menu-item:hover {
+        .dark .stacked-menu .menu-item:hover {
             background-color: rgba(0, 122, 255, 0.2);
         }
 
-        .ios-menu .menu-item:active {
+        /* Ensure stacked menu text stays readable on hover */
+        .light .stacked-menu .menu-item:hover {
+            color: #333;
+        }
+        .dark .stacked-menu .menu-item:hover {
+            color: inherit;
+        }
+
+        .stacked-menu .menu-item:active {
             background-color: rgba(0, 122, 255, 0.2);
         }
 
-        .dark .ios-menu .menu-item:active {
+        .dark .stacked-menu .menu-item:active {
             background-color: rgba(0, 122, 255, 0.3);
         }
 
@@ -510,24 +518,16 @@
             align-items: center;
             justify-content: center;
             font-size: 18px;
-            margin-right: 12px;
+            margin-right: 16px;
         }
 
         .menu-text {
             flex: 1;
             font-size: 16px;
             font-weight: 400;
+            text-align: left;
         }
 
-        .menu-chevron {
-            color: #999;
-            font-size: 14px;
-            font-weight: 300;
-        }
-
-        .dark .menu-chevron {
-            color: #666;
-        }
 
         /* Theme Toggle */
 
@@ -621,11 +621,11 @@
                 max-width: 220px;
             }
             
-            .ios-menu {
+            .stacked-menu {
                 margin: 0 auto 20px auto;
             }
             
-            .ios-menu .menu-item {
+            .stacked-menu .menu-item {
                 padding: 10px 14px;
             }
             
@@ -637,7 +637,7 @@
                 width: 22px;
                 height: 22px;
                 font-size: 16px;
-                margin-right: 10px;
+                margin-right: 14px;
             }
             
             .menu-item {
@@ -702,76 +702,35 @@
                     Hi, I’m Alex 👋🏻 I started out as a competitive sprinter who somehow also ran one of the web’s leading Apple blogs in the late 2000s—landing me in the room for the reveal of the first iPhone. In the 2010s my journey at the University at Greenwich brought me into activism and leadership, and since then I’ve built a career in media and tech partnerships while staying active in my local community, politics, and creative side projects.
                     <br>
                     <br>
-                    Connect with me below, explore my work, and if you’re looking for consulting support—get in touch. (Yes I use em dashes, and so should you)
+                    Connect with me below, explore my work, and if you’re looking for consulting support—get in touch (yes I use em dashes, and so should you).
                 </p>
-                
-                <!-- Commented out social buttons - keeping for potential future use
-                <div class="social-links">
 
-                    <a href="https://linkedin.com/in/alexbrooks" class="social-btn">
-                        <span>💼</span>
-                        LinkedIn
-                    </a>
-
-                    <a href="https://threads.net/alexbrooks" class="social-btn">
-                        <span>🧵</span>
-                        Threads
-                    </a>
-                    
-                    <a href="https://mastodon.social/@Alexbrooks" class="social-btn">
-                        <span>🐘</span>
-                        Mastodon
-                    </a>
-                    
-                    <a href="https://instagram.com/alexbrooks" class="social-btn">
-                        <span>📸</span>
-                        Instagram
-                    </a>
-                    
-                    <a href="https://www.flickr.com/photos/alexbrooks/" class="social-btn">
-                        <span>🌄</span>
-                        Flickr
-                    </a>
-
-                    <a href="https://zoho-consultant.services" class="social-btn">
-                        <span>🌐</span>
-                        CRM Consultancy
-                    </a>
-                    
-                    <a href="https://worldofapple.com" class="social-btn">
-                        <span>🔗</span>
-                        World of Apple
-                    </a>
-                </div>
-                -->
-
-                <!-- iOS Settings Style Menu -->
-                <div class="ios-menu">
+                <!-- Stacked Menu -->
+                <div class="stacked-menu">
                     <div class="menu-section">
                         <a href="https://linkedin.com/in/alexbrooks" class="menu-item">
                             <div class="menu-icon">💼</div>
                             <div class="menu-text">LinkedIn</div>
-                            <div class="menu-chevron">></div>
                         </a>
                         <a href="https://threads.net/alexbrooks" class="menu-item">
                             <div class="menu-icon">🧵</div>
                             <div class="menu-text">Threads</div>
-                            <div class="menu-chevron">></div>
                         </a>
                         <a href="https://mastodon.social/@Alexbrooks" class="menu-item">
                             <div class="menu-icon">🐘</div>
                             <div class="menu-text">Mastodon</div>
-                            <div class="menu-chevron">></div>
+                        </a>
+                        <a href="https://bsky.app/profile/alexbrooks.co.uk" class="menu-item">
+                            <div class="menu-icon">🦋</div>
+                            <div class="menu-text">BlueSky</div>
                         </a>
                         <a href="https://instagram.com/alexbrooks" class="menu-item">
                             <div class="menu-icon">📸</div>
                             <div class="menu-text">Instagram</div>
-                            <div class="menu-chevron">></div>
                         </a>
                         <a href="https://www.flickr.com/photos/alexbrooks/" class="menu-item">
                             <div class="menu-icon">🌄</div>
                             <div class="menu-text">Flickr</div>
-                            <div class="menu-chevron">></div>
                         </a>
                     </div>
                     
@@ -779,12 +738,10 @@
                         <a href="https://zoho-consultant.services" class="menu-item">
                             <div class="menu-icon">🌐</div>
                             <div class="menu-text">CRM Consultancy</div>
-                            <div class="menu-chevron">></div>
                         </a>
                         <a href="https://worldofapple.com" class="menu-item">
                             <div class="menu-icon">🔗</div>
                             <div class="menu-text">World of Apple</div>
-                            <div class="menu-chevron">></div>
                         </a>
                     </div>
                 </div>
