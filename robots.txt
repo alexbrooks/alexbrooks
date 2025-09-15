@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /crofton-park-personal-statement.html
+
+# Allow all other pages to be indexed
+Allow: /index.html
+Allow: /bio.html
+Allow: /images/
