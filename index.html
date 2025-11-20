@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alex Brooks</title>
 
-    <meta name="description" content="Alex Brooks — writer, consultant, and technology enthusiast. Sharing projects, photography, and thoughts on Apple, technology, and politics">
-    <meta name="keywords" content="Alex Brooks, Apple enthusiast, World of Apple, photography, local activism, community projects London, politics, technology, London personal website, AlexBrooks, AlexBrooksUK">
+    <meta name="description"
+        content="Alex Brooks — writer, consultant, and technology enthusiast. Sharing projects, photography, and thoughts on Apple, technology, and politics">
+    <meta name="keywords"
+        content="Alex Brooks, Apple enthusiast, World of Apple, photography, local activism, community projects London, politics, technology, London personal website, AlexBrooks, AlexBrooksUK">
     <meta name="author" content="Alex Brooks">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://alexbrooks.co.uk/">
     <meta property="og:title" content="Alex Brooks - Personal Website">
-    <meta property="og:description" content="Personal website of Alex Brooks. Connect with me on social media and explore my work.">
+    <meta property="og:description"
+        content="Personal website of Alex Brooks. Connect with me on social media and explore my work.">
     <meta property="og:image" content="https://alexbrooks.co.uk/images/alex-brooks-side.jpg">
     <meta property="og:image:width" content="800">
     <meta property="og:image:height" content="800">
@@ -23,7 +27,8 @@
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://alexbrooks.co.uk/">
     <meta property="twitter:title" content="Alex Brooks - Personal Website">
-    <meta property="twitter:description" content="Personal website of Alex Brooks. Connect with me on social media and explore my work.">
+    <meta property="twitter:description"
+        content="Personal website of Alex Brooks. Connect with me on social media and explore my work.">
     <meta property="twitter:image" content="https://alexbrooks.co.uk/images/alex-brooks-side.jpg">
     <meta property="twitter:image:alt" content="Alex Brooks">
 
@@ -35,7 +40,7 @@
     <link rel="icon" type="image/png" sizes="64x64" href="images/favicon-64x64.png">
     <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    
+
     <meta name="apple-mobile-web-app-title" content="Alex Brooks">
     <meta name="application-name" content="Alex Brooks">
 
@@ -76,43 +81,38 @@
             font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif;
             min-height: 100vh;
             transition: all 0.3s ease;
-            padding-top: 22px; /* Space for menu bar */
+            padding-top: 22px;
+            /* Space for menu bar */
         }
 
         /* Light mode - Classic Aqua */
         body.light {
-            background: 
-                linear-gradient(0deg, 
+            background:
+                linear-gradient(0deg,
                     rgba(135, 206, 250, 0.3) 0px,
                     rgba(135, 206, 250, 0.1) 1px,
                     rgba(135, 206, 250, 0.1) 2px,
-                    transparent 3px
-                ),
-                linear-gradient(
-                    135deg,
+                    transparent 3px),
+                linear-gradient(135deg,
                     #e6f3ff 0%,
                     #cce7ff 50%,
-                    #b3daff 100%
-                );
+                    #b3daff 100%);
             background-size: 100% 4px, 100% 100%;
             color: #333;
         }
 
         /* Dark mode - Darker Aqua */
         body.dark {
-            background: 
-                linear-gradient(0deg, 
+            background:
+                linear-gradient(0deg,
                     rgba(70, 130, 180, 0.2) 0px,
                     rgba(70, 130, 180, 0.05) 1px,
                     rgba(70, 130, 180, 0.05) 2px,
-                    transparent 3px
-                ),
-                linear-gradient(
-                    135deg,
+                    transparent 3px),
+                linear-gradient(135deg,
                     #1a2332 0%,
                     #253040 50%,
-                    #2d3a4a 100%
-                );
+                    #2d3a4a 100%);
             background-size: 100% 4px, 100% 100%;
             color: #e0e0e0;
         }
@@ -133,22 +133,18 @@
         }
 
         .light .menu-bar {
-            background: linear-gradient(
-                180deg,
-                rgba(255, 255, 255, 0.95) 0%,
-                rgba(240, 240, 240, 0.95) 100%
-            );
+            background: linear-gradient(180deg,
+                    rgba(255, 255, 255, 0.95) 0%,
+                    rgba(240, 240, 240, 0.95) 100%);
             border-bottom: 1px solid rgba(0, 0, 0, 0.1);
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
             color: #333;
         }
 
         .dark .menu-bar {
-            background: linear-gradient(
-                180deg,
-                rgba(60, 60, 60, 0.95) 0%,
-                rgba(45, 45, 45, 0.95) 100%
-            );
+            background: linear-gradient(180deg,
+                    rgba(60, 60, 60, 0.95) 0%,
+                    rgba(45, 45, 45, 0.95) 100%);
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
             color: #e0e0e0;
@@ -176,8 +172,10 @@
         a.menu-item:focus {
             outline: none;
         }
+
         .apple-logo {
-            margin-top: -1px; /* Fine-tune vertical alignment */
+            margin-top: -1px;
+            /* Fine-tune vertical alignment */
         }
 
         .light .menu-item:hover {
@@ -204,7 +202,7 @@
         .window {
             border-radius: 8px;
             overflow: hidden;
-            box-shadow: 
+            box-shadow:
                 0 8px 30px rgba(0, 0, 0, 0.15),
                 0 0 0 1px rgba(255, 255, 255, 0.2);
         }
@@ -219,20 +217,16 @@
         }
 
         .light .title-bar {
-            background: linear-gradient(
-                180deg,
-                rgba(240, 240, 240, 0.95) 0%,
-                rgba(220, 220, 220, 0.95) 100%
-            );
+            background: linear-gradient(180deg,
+                    rgba(240, 240, 240, 0.95) 0%,
+                    rgba(220, 220, 220, 0.95) 100%);
             border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         }
 
         .dark .title-bar {
-            background: linear-gradient(
-                180deg,
-                rgba(80, 80, 80, 0.95) 0%,
-                rgba(65, 65, 65, 0.95) 100%
-            );
+            background: linear-gradient(180deg,
+                    rgba(80, 80, 80, 0.95) 0%,
+                    rgba(65, 65, 65, 0.95) 100%);
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
 
@@ -302,7 +296,7 @@
             border-radius: 50%;
             margin: 0 auto 25px;
             border: 3px solid;
-            box-shadow: 
+            box-shadow:
                 inset 0 1px 3px rgba(0, 0, 0, 0.1),
                 0 2px 8px rgba(0, 0, 0, 0.15);
             background: linear-gradient(135deg, #ddd 0%, #f0f0f0 100%);
@@ -360,7 +354,7 @@
         }
 
         /* Social Links - Stacked vertically */
-        
+
         .social-links {
             display: flex;
             flex-direction: column;
@@ -389,28 +383,24 @@
         }
 
         .light .social-btn {
-            background: linear-gradient(
-                180deg,
-                rgba(255, 255, 255, 0.95) 0%,
-                rgba(245, 245, 245, 0.95) 50%,
-                rgba(230, 230, 230, 0.95) 100%
-            );
+            background: linear-gradient(180deg,
+                    rgba(255, 255, 255, 0.95) 0%,
+                    rgba(245, 245, 245, 0.95) 50%,
+                    rgba(230, 230, 230, 0.95) 100%);
             border: 1px solid rgba(255, 255, 255, 0.6);
-            box-shadow: 
+            box-shadow:
                 inset 0 1px 0 rgba(255, 255, 255, 0.9),
                 0 1px 3px rgba(0, 0, 0, 0.1);
             color: #333;
         }
 
         .dark .social-btn {
-            background: linear-gradient(
-                180deg,
-                rgba(255, 255, 255, 0.2) 0%,
-                rgba(255, 255, 255, 0.15) 50%,
-                rgba(255, 255, 255, 0.1) 100%
-            );
+            background: linear-gradient(180deg,
+                    rgba(255, 255, 255, 0.2) 0%,
+                    rgba(255, 255, 255, 0.15) 50%,
+                    rgba(255, 255, 255, 0.1) 100%);
             border: 1px solid rgba(255, 255, 255, 0.3);
-            box-shadow: 
+            box-shadow:
                 inset 0 1px 0 rgba(255, 255, 255, 0.3),
                 0 1px 3px rgba(0, 0, 0, 0.2);
             color: #e0e0e0;
@@ -421,25 +411,21 @@
         }
 
         .light .social-btn:hover {
-            background: linear-gradient(
-                180deg,
-                rgba(255, 255, 255, 1) 0%,
-                rgba(250, 250, 250, 1) 50%,
-                rgba(240, 240, 240, 1) 100%
-            );
-            box-shadow: 
+            background: linear-gradient(180deg,
+                    rgba(255, 255, 255, 1) 0%,
+                    rgba(250, 250, 250, 1) 50%,
+                    rgba(240, 240, 240, 1) 100%);
+            box-shadow:
                 inset 0 1px 0 rgba(255, 255, 255, 1),
                 0 2px 6px rgba(0, 0, 0, 0.15);
         }
 
         .dark .social-btn:hover {
-            background: linear-gradient(
-                180deg,
-                rgba(255, 255, 255, 0.25) 0%,
-                rgba(255, 255, 255, 0.2) 50%,
-                rgba(255, 255, 255, 0.15) 100%
-            );
-            box-shadow: 
+            background: linear-gradient(180deg,
+                    rgba(255, 255, 255, 0.25) 0%,
+                    rgba(255, 255, 255, 0.2) 50%,
+                    rgba(255, 255, 255, 0.15) 100%);
+            box-shadow:
                 inset 0 1px 0 rgba(255, 255, 255, 0.4),
                 0 2px 6px rgba(0, 0, 0, 0.3);
         }
@@ -449,25 +435,21 @@
         }
 
         .light .social-btn:active {
-            background: linear-gradient(
-                180deg,
-                rgba(230, 230, 230, 0.95) 0%,
-                rgba(245, 245, 245, 0.95) 50%,
-                rgba(255, 255, 255, 0.95) 100%
-            );
-            box-shadow: 
+            background: linear-gradient(180deg,
+                    rgba(230, 230, 230, 0.95) 0%,
+                    rgba(245, 245, 245, 0.95) 50%,
+                    rgba(255, 255, 255, 0.95) 100%);
+            box-shadow:
                 inset 0 1px 2px rgba(0, 0, 0, 0.1),
                 0 1px 2px rgba(0, 0, 0, 0.1);
         }
 
         .dark .social-btn:active {
-            background: linear-gradient(
-                180deg,
-                rgba(255, 255, 255, 0.1) 0%,
-                rgba(255, 255, 255, 0.15) 50%,
-                rgba(255, 255, 255, 0.2) 100%
-            );
-            box-shadow: 
+            background: linear-gradient(180deg,
+                    rgba(255, 255, 255, 0.1) 0%,
+                    rgba(255, 255, 255, 0.15) 50%,
+                    rgba(255, 255, 255, 0.2) 100%);
+            box-shadow:
                 inset 0 1px 2px rgba(0, 0, 0, 0.2),
                 0 1px 2px rgba(0, 0, 0, 0.2);
         }
@@ -524,6 +506,7 @@
         .light .stacked-menu .menu-item:hover {
             color: #333;
         }
+
         .dark .stacked-menu .menu-item:hover {
             color: inherit;
         }
@@ -570,21 +553,17 @@
 
         /* Light mode - darker background for better visibility */
         .light .theme-toggle {
-            background: linear-gradient(
-                180deg,
-                rgba(0, 0, 0, 0.15) 0%,
-                rgba(0, 0, 0, 0.25) 100%
-            );
+            background: linear-gradient(180deg,
+                    rgba(0, 0, 0, 0.15) 0%,
+                    rgba(0, 0, 0, 0.25) 100%);
             border: 1px solid rgba(0, 0, 0, 0.3);
         }
 
         /* Dark mode - lighter background */
         .dark .theme-toggle {
-            background: linear-gradient(
-                180deg,
-                rgba(255, 255, 255, 0.3) 0%,
-                rgba(255, 255, 255, 0.1) 100%
-            );
+            background: linear-gradient(180deg,
+                    rgba(255, 255, 255, 0.3) 0%,
+                    rgba(255, 255, 255, 0.1) 100%);
             border: 1px solid rgba(255, 255, 255, 0.3);
         }
 
@@ -602,20 +581,16 @@
 
         /* Light mode - white circle on dark background */
         .light .theme-toggle::before {
-            background: linear-gradient(
-                135deg,
-                #ffffff 0%,
-                #f0f0f0 100%
-            );
+            background: linear-gradient(135deg,
+                    #ffffff 0%,
+                    #f0f0f0 100%);
         }
 
         /* Dark mode - dark circle on light background, moved to right */
         .dark .theme-toggle::before {
-            background: linear-gradient(
-                135deg,
-                #333333 0%,
-                #444444 100%
-            );
+            background: linear-gradient(135deg,
+                    #333333 0%,
+                    #444444 100%);
             transform: translateX(22px);
         }
 
@@ -624,47 +599,47 @@
                 margin: 20px auto;
                 padding: 0 15px;
             }
-            
+
             .profile-card {
                 padding: 30px 25px;
             }
-            
+
             .headshot {
                 width: 120px;
                 height: 120px;
             }
-            
+
             .name {
                 font-size: 24px;
             }
-            
+
             .bio {
                 font-size: 15px;
             }
-            
+
             .social-links {
                 max-width: 220px;
             }
-            
+
             .stacked-menu {
                 margin: 0 auto 20px auto;
             }
-            
+
             .stacked-menu .menu-item {
                 padding: 10px 14px;
             }
-            
+
             .menu-text {
                 font-size: 15px;
             }
-            
+
             .menu-icon {
                 width: 22px;
                 height: 22px;
                 font-size: 16px;
                 margin-right: 14px;
             }
-            
+
             .menu-item {
                 padding: 0 8px;
                 font-size: 12px;
@@ -672,27 +647,32 @@
         }
     </style>
     <!-- GoSquared Analytics -->
-        <script>
-            !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(arguments)};
-            d=s.createElement(q);d.src='//d1l6p2sc9645hc.cloudfront.net/gosquared.js';q=
-            s.getElementsByTagName(q)[0];q.parentNode.insertBefore(d,q)}(window,document
-            ,'script','_gs');
+    <script>
+        !function (g, s, q, r, d) {
+            r = g[r] = g[r] || function () { (r.q = r.q || []).push(arguments) };
+            d = s.createElement(q); d.src = '//d1l6p2sc9645hc.cloudfront.net/gosquared.js'; q =
+                s.getElementsByTagName(q)[0]; q.parentNode.insertBefore(d, q)
+        }(window, document
+            , 'script', '_gs');
 
-            _gs('GSN-923931-O');
-            _gs('set', 'anonymizeIP', true);
-        </script>
+        _gs('GSN-923931-O');
+        _gs('set', 'anonymizeIP', true);
+    </script>
 
 </head>
+
 <body class="light">
     <!-- Mac Menu Bar -->
     <div class="menu-bar">
         <div class="menu-item">
-            <svg class="apple-logo" width="14" height="17" viewBox="0 0 256 315" fill="currentColor" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
-        <path d="M213.803394,167.030943 C214.2452,214.609646 255.542482,230.442639 256,230.644727 C255.650812,231.761357 249.401383,253.208293 234.24263,275.361446 C221.138555,294.513969 207.538253,313.596333 186.113759,313.991545 C165.062051,314.379442 158.292752,301.507828 134.22469,301.507828 C110.163898,301.507828 102.642899,313.596301 82.7151126,314.379442 C62.0350407,315.16201 46.2873831,293.668525 33.0744079,274.586162 C6.07529317,235.552544 -14.5576169,164.286328 13.147166,116.18047 C26.9103111,92.2909053 51.5060917,77.1630356 78.2026125,76.7751096 C98.5099145,76.3877456 117.677594,90.4371851 130.091705,90.4371851 C142.497945,90.4371851 165.790755,73.5415029 190.277627,76.0228474 C200.528668,76.4495055 229.303509,80.1636878 247.780625,107.209389 C246.291825,108.132333 213.44635,127.253405 213.803394,167.030988 M174.239142,50.1987033 C185.218331,36.9088319 192.607958,18.4081019 190.591988,0 C174.766312,0.636050225 155.629514,10.5457909 144.278109,23.8283506 C134.10507,35.5906758 125.195775,54.4170275 127.599657,72.4607932 C145.239231,73.8255433 163.259413,63.4970262 174.239142,50.1987249"/>
-    </svg>
+            <svg class="apple-logo" width="14" height="17" viewBox="0 0 256 315" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
+                <path
+                    d="M213.803394,167.030943 C214.2452,214.609646 255.542482,230.442639 256,230.644727 C255.650812,231.761357 249.401383,253.208293 234.24263,275.361446 C221.138555,294.513969 207.538253,313.596333 186.113759,313.991545 C165.062051,314.379442 158.292752,301.507828 134.22469,301.507828 C110.163898,301.507828 102.642899,313.596301 82.7151126,314.379442 C62.0350407,315.16201 46.2873831,293.668525 33.0744079,274.586162 C6.07529317,235.552544 -14.5576169,164.286328 13.147166,116.18047 C26.9103111,92.2909053 51.5060917,77.1630356 78.2026125,76.7751096 C98.5099145,76.3877456 117.677594,90.4371851 130.091705,90.4371851 C142.497945,90.4371851 165.790755,73.5415029 190.277627,76.0228474 C200.528668,76.4495055 229.303509,80.1636878 247.780625,107.209389 C246.291825,108.132333 213.44635,127.253405 213.803394,167.030988 M174.239142,50.1987033 C185.218331,36.9088319 192.607958,18.4081019 190.591988,0 C174.766312,0.636050225 155.629514,10.5457909 144.278109,23.8283506 C134.10507,35.5906758 125.195775,54.4170275 127.599657,72.4607932 C145.239231,73.8255433 163.259413,63.4970262 174.239142,50.1987249" />
+            </svg>
         </div>
         <a href="" class="menu-item" target="_blank" rel="noopener">
-                            Profile
+            Profile
         </a>
         <div class="menu-item">Edit</div>
         <div class="menu-item">View</div>
@@ -702,7 +682,7 @@
         <div class="menu-item">🔍</div>
         <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode"></button>
     </div>
-    
+
     <div class="container">
         <div class="window">
             <!-- Mac Window Title Bar -->
@@ -714,20 +694,26 @@
                 </div>
                 <div class="window-title">Alex's Personal Site</div>
             </div>
-            
+
             <!-- Window Content -->
             <div class="profile-card">
                 <div class="headshot">
-                        <img src="images/alex-brooks-side.jpg" alt="Alex Brooks" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                    <img src="images/alex-brooks-side.jpg" alt="Alex Brooks"
+                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
                 </div>
-                
+
                 <h1 class="name">Alex Brooks</h1>
-                
+
                 <p class="bio">
-                    Hi, I’m Alex 👋🏻 I started out as a competitive sprinter who somehow also ran one of the web’s leading Apple blogs in the late 2000s—landing me in the room for the reveal of the first iPhone. In the 2010s my journey at the University at Greenwich brought me into activism and leadership, and since then I’ve built a career in media and tech partnerships while staying active in my local community, politics, and creative side projects.
+                    Hi, I’m Alex 👋🏻 I started out as a competitive sprinter who somehow also ran one of the web’s
+                    leading Apple blogs in the late 2000s—landing me in the room for the reveal of the first iPhone. In
+                    the 2010s my journey at the University at Greenwich brought me into activism and leadership, and
+                    since then I’ve built a career in media and tech partnerships while staying active in my local
+                    community, politics, and creative side projects.
                     <br>
                     <br>
-                    Connect with me below, explore my work, and if you’re looking for consulting support—get in touch (yes I use em dashes, and so should you).
+                    Connect with me below, explore my work, and if you’re looking for consulting support—get in touch
+                    (yes I use em dashes, and so should you).
                 </p>
 
                 <!-- Stacked Menu -->
@@ -758,11 +744,11 @@
                             <div class="menu-text">Flickr</div>
                         </a>
                     </div>
-                    
+
                     <div class="menu-section">
-                        <a href="https://zoho-consultant.services" class="menu-item">
-                            <div class="menu-icon">🌐</div>
-                            <div class="menu-text">CRM Consultancy</div>
+                        <a href="https://alexbrooks.london" class="menu-item">
+                            <div class="menu-icon">�</div>
+                            <div class="menu-text">Alex Brooks for Crofton Park</div>
                         </a>
                         <a href="https://worldofapple.com" class="menu-item">
                             <div class="menu-icon">🍎</div>
@@ -770,7 +756,7 @@
                         </a>
                     </div>
                 </div>
-                
+
                 <!-- Footer Copyright -->
                 <div class="footer">
                     © 2025 Alex Brooks (and maybe Apple).
@@ -819,4 +805,5 @@
         });
     </script>
 </body>
+
 </html>
