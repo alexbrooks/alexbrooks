@@ -328,11 +328,26 @@
             text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
         }
 
+        /* Biography styling */
+
         .bio {
+            max-width: 580px;
+            margin: 0 auto 26px;
+            text-align: center;
             font-size: 16px;
-            line-height: 1.6;
-            margin-bottom: 30px;
+            line-height: 1.55;
+            font-weight: 400;
             opacity: 0.9;
+        }
+
+        .bio p {
+            margin: 0 0 14px;
+        }
+
+        .bio p:last-child {
+            margin-bottom: 0;
+            font-style: italic;
+            opacity: 0.8;
         }
 
         /* Footer styling */
@@ -615,6 +630,12 @@
 
             .bio {
                 font-size: 15px;
+                line-height: 1.5;
+                margin-bottom: 22px;
+            }
+
+            .bio p {
+                margin-bottom: 12px;
             }
 
             .social-links {
@@ -704,16 +725,36 @@
 
                 <h1 class="name">Alex Brooks</h1>
 
-                <p class="bio">
-                    Hi, I’m Alex 👋🏻 I started out as a competitive sprinter who somehow also ran one of the web’s
-                    leading Apple blogs in the late 2000s—landing me in the room for the reveal of the first iPhone. In
-                    the 2010s my journey at the University at Greenwich brought me into activism and leadership, and
-                    since then I’ve built a career in media and tech partnerships while staying active in my local
-                    community, politics, and creative side projects.
-                    <br>
-                    <br>
-                    Connect with me below and explore my work.
-                </p>
+                <div class="bio">
+
+                    <p>
+                        Hi, I’m Alex 👋🏻 I’ve spent an unreasonable amount of my life
+                        on Apple, the internet, local politics and trying to make
+                        organisations work better.
+                    </p>
+
+                    <p>
+                        Once a competitive sprinter, I went on to run one of the
+                        web’s leading independent Apple sites, which somehow got
+                        me into the room when Steve Jobs unveiled the first iPhone.
+                        These days I work across media, technology, partnerships
+                        and consulting.
+                    </p>
+
+                    <p>
+                        I’m involved in south-east London community life and
+                        politics, so I have strong opinions about planning
+                        applications, fly tipping and things nobody sensible
+                        discusses at parties. Otherwise, I’m writing, running,
+                        travelling, tinkering with technology or starting another
+                        project that will never see the light of day.
+                    </p>
+
+                    <p>
+                        This site is the unorganised version of all that.
+                    </p>
+
+                </div>
 
                 <!-- Stacked Menu -->
                 <div class="stacked-menu">
