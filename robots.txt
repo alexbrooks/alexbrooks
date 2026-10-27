@@ -6,3 +6,5 @@ Disallow: /crofton-park-personal-statement.html
 Allow: /index.html
 Allow: /bio.html
 Allow: /images/
+
+Sitemap: https://alexbrooks.co.uk/sitemap.xml
